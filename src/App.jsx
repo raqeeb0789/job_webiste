@@ -9,6 +9,24 @@ class App extends Component {
   render() {
     return (
       <div id="container">
+        <div id ='popup'>
+          <div id="popup-window">
+            <div className="signin_container">
+              <div id="signin_header">
+                <h2>Login</h2>
+              </div>
+              <div id="signin_body">
+              <label htmlFor="username">User Name: </label>
+              <input type="text" placeholder="User Name" id='username'/> 
+              <label htmlFor='password'>Password: </label>
+              <input type="password" placeholder='Password' id='password' />
+              <p>Forgot <span id='forgot_text'>Password ?</span></p>
+              <p>Signup</p>
+              </div>
+            </div>
+          
+          </div>
+        </div>
         <header className="header">
           <div className="logo">
             <img src={logo} alt="Job Portal" />
