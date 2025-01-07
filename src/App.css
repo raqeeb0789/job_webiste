@@ -177,11 +177,10 @@ body {
   
   /* Footer */
   .footer {
-    width: 100%;
+    width: 99.25%;
     height: 60px; 
     text-align: center;
     padding: 10px; 
-    background-color: white;
     border-top: 1px solid #ddd;
 }
 
@@ -217,8 +216,8 @@ body {
 }
 
 #popup-window {
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
     background-color: white;
     border: 2px solid #155171;
     border-radius: 8px;
@@ -231,6 +230,7 @@ body {
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
+    
     font-weight: 400;
     background-color: #1572a4;
     color: white;
@@ -240,6 +240,23 @@ body {
     text-align: center;
 }
 
+.signin_container #signin_header h5 {
+  position: relative;
+  left: 4.5rem;
+  bottom: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 20px;
+  border-radius: 50%;
+
+}
+
+.signin_container #signin_header h5:hover {
+  color: white;
+  transform: scale(1.05);
+  background-color: red;
+
+}
 .signin_container #signin_body {
     padding: 20px;
     font-size: 14px;
@@ -269,6 +286,32 @@ body {
 .signin_container #signin_body label {
     font-weight: bold;
     color: #242323;
+}
+
+.signin_container #signin_body button {
+  width: 70%;
+  background-color: #1572a4;
+  color: white;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 1.5rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signin_container #signin_body button:hover {
+  background-color: #0e5980;
+  transform: scale(1.05);
+}
+
+.signin_container #signin_body button:active {
+  background-color: #0b4460;
+  transform: scale(0.95);
 }
 
 .signin_container #signin_body p {
