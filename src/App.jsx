@@ -12,7 +12,7 @@ class App extends Component {
         <header className="header">
           <div className="logo">
             <img src={logo} alt="Job Portal" />
-            <span id='job'>Job</span> Portal
+            <span id='job'><b>Job</b></span> Portal
           </div>
           <nav className="nav">
             <img src={userIcon} alt="User Icon" />
