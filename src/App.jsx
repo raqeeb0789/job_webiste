@@ -104,11 +104,39 @@ class App extends Component {
                     required
                   />
 
+                    <label htmlFor="role">Role:</label>
+                    <select
+                      id="role"
+                      value={this.state.role} // State variable for the selected value
+                      onChange={this.handleInputChange} // Event handler for state updates
+                      required
+                    >
+                      <option value="" disabled>
+                        Select Role
+                      </option>
+                      <option value=""></option>
+                      <option value="Admin">Admin</option>
+                      <option value="Editor">Employee</option>
+                      <option value="Viewer">Job Seeker</option>
+                    </select>
+
+                    <br />
+
                   <label htmlFor="password">Password:</label>
                   <input
                     type="password"
                     id="password"
                     placeholder="Enter your password"
+                    value={this.state.password}
+                    onChange={this.handleInputChange}
+                    required
+                  />
+
+                  <label htmlFor="password">Confirm Password:</label>
+                  <input
+                    type="Text"
+                    id="password"
+                    placeholder="Re-enter the password"
                     value={this.state.password}
                     onChange={this.handleInputChange}
                     required
