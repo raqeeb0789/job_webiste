@@ -339,7 +339,7 @@ label[for="role"] {
 }
 
 /* Button styling */
-#login_button {
+.submitbutton {
   padding: 10px;
   background-color: #007bff;
   color: white;
@@ -351,13 +351,11 @@ label[for="role"] {
   width: 100%;
   text-align: center;
 }
-
-#login_button:hover {
+.submitbutton:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }
-
-#login_button:active {
+.submitbutton:active {
   background-color: #003d7a;
   transform: scale(0.95);
 }
